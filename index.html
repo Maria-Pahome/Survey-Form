@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="bg-image"><img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eXxlbnwwfHwwfHw%3D&w=1000&q=80" alt="bg-img"></div>
+<div class="container">
+<form id="survey-form">
+  <div>
+    <h1 id="title"><i class="fas fa-route"></i> Travel Survey</h1>
+    <p id="description">This survey will allow us to analize your expectations regarding the destination tour.</p>
+  </div>
+
+  <div class="name">
+    <label for="name-label">Name</label>
+    <input required class="validation-f" type="text" id="name-label" placeholder="Enter your name">
+  </div>
+
+  <div class="email">
+    <label for="email-label">Email</label>
+    <input required class="validation-f" type="email" id="email-label" placeholder="Enter your email">
+  </div>
+
+  <div class="age">
+    <label for="number-label">Age (optional)</label>
+    <input required class="validation-f" type="number" id="number-label" placeholder="Age">
+  </div>
+
+  <label for="dropdown">* What is your favorite service so far?</label>
+  <br>
+  <select id="dropdown" name="services">
+    <option value="select">Select your favorite service</option>
+    <option value="cooking">Cooking</option>
+    <option value="delivery">Delivery</option>
+    <option value="hospitality">Hospitality</option>
+    <option value="management">Problem solving</option>
+  </select>
+  <br>
+
+  <div class="ranking">
+    <div>* How you would rate our services?</div>
+    <input checked type="radio" id="service1" name="service1" value="Bike">
+    <label for="service1"> Excellent</label><br>
+
+    <input type="radio" id="service2" name="service2" value="not so good">
+    <label for="service2"> Not so good </label><br>
+
+    <input type="radio" id="service3" name="service3" value="below average">
+    <label for="service3"> Below average</label>
+  </div>
+  <br>
+
+  <label for="online-services">* What is the best alternative for our online services?</label><br>
+  <select id="online-services" name="online-service">
+    <option value="select">Select an option</option>
+    <option value="chat">Chat assistance</option>
+    <option value="phone">Phone assistance</option>
+    <option value="email-ass">Email assistance</option>
+    <option value="facetime">Facetime assistance</option>
+  </select>
+
+  <br>
+
+  <div class="dream-places">
+    <div>* What are your dream places to visit with our services in near future?</div>
+
+    <input type="checkbox" id="place1" name="place1" value="USA">
+    <label for="place1">USA</label><br>
+
+    <input type="checkbox" id="place2" name="vehicle2" value="Spain">
+    <label for="place2">Spain</label><br>
+
+    <input type="checkbox" id="place3" name="place3" value="France">
+    <label for="place3">France</label><br>
+
+    <input type="checkbox" id="place4" name="place4" value="Greece">
+    <label for="place4">Greece</label><br>
+
+    <input type="checkbox" id="place5" name="place5" value="Italy">
+    <label for="place5">Italy</label><br>
+
+    <input type="checkbox" id="place6" name="place6" value="Germany>
+      <label for=" place6">Germany</label><br>
+
+    <input checked type="checkbox" id="place7" name="place7" value="Romania">
+    <label for="place7">Romania</label><br>
+
+    <input type="checkbox" id="place8" name="place8" value="Moldavia">
+    <label for="place8">Moldavia</label><br>
+
+    <input type="checkbox" id="place9" name="place9" value="Latvia">
+    <label for="place9">Latvia</label><br>
+
+    <input type="checkbox" id="place10" name="place10" value="Brazil">
+    <label for="place10">Brazil</label><br>
+
+    <input type="checkbox" id="place11" name="place11" value="Hungary">
+    <label for="place3">Hungary</label><br>
+  </div>
+
+  <br>
+  <label for="textarea">* Any suggestions or comments?</label><br>
+  <textarea name="message" rows="5" cols="82">Enter your comment here...</textarea>
+  <br>
+
+  <button id="submit" type="submit">Submit</button>
+</form>
+
+<footer>&copy; 2021 Maria Pahome </footer>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</div>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
